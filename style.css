@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=League+Spartan:wght@700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --darkgreyblue: hsl(224, 30%, 27%);
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--white);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  margin: 100px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 5px grey;
+  min-height: 100vh;
+}
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+  width: 700px;
+  height: 600px;
+  box-shadow: 0px 0px 5px grey;
+}
+.result {
+  flex: 0 0 45%;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summary {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.result .score {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  text-align: center;
+}
+.result h2 {
+  font-size: 22px;
+  padding: 20px;
+}
+.result h1 {
+  padding: 20px;
+}
+.result p {
+  font-size: 18px;
+  text-align: center;
+}
+.summary h1 {
+  color: var(--darkgreyblue);
+}
+
+.summary .reaction {
+  color: var(--Lightred);
+}
+.summary .memory {
+  color: var(--Orangeyellow);
+}
+.summary .verbal {
+  color: var(--Greenteal);
+}
+.summary .visual {
+  color: var(--Cobaltblue);
+}
+.summary .titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-right: 25px;
+
+  border-radius: 10px;
+}
+.summary .titles img {
+  font-size: 18px;
+}
+summary .titles p span {
+  padding: 10px;
+}
+.summary .continue {
+  background: none;
+  border: none;
+  width: 250px;
+  background-color: var(--darkgreyblue);
+  color: var(--white);
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 20px;
+}
